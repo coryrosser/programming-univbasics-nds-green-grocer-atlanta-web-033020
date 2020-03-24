@@ -9,11 +9,13 @@ def find_item_by_name_in_collection(name, collection)
     end
   end
   return nil
-      
-    
 end
 
 def consolidate_cart(cart)
+  cart_array = []
+  i = 0 
+  pp cart
+  
   # Consult README for inputs and outputs
   #
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
