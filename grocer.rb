@@ -1,5 +1,7 @@
 def find_item_by_name_in_collection(name, collection)
-  i = 
+  i = 0 
+  while i < collection.length do 
+    if collection[i].any? {name}
     
 end
 
