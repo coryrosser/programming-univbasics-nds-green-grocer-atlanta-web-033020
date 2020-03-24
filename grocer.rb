@@ -14,7 +14,8 @@ end
 def consolidate_cart(cart)
   cart_array = []
   i = 0 
-  pp cart
+  while i < cart.length do 
+    if cart_array.has_value?()
   
   # Consult README for inputs and outputs
   #
