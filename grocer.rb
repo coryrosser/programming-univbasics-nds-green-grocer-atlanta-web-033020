@@ -2,7 +2,7 @@ def find_item_by_name_in_collection(name, collection)
   i = 0 
   while i < collection.length do 
     item = collection[i][:item]
-    if collection[i].any? {name = item}
+    if collection[i].has_value?(name)
       return item
     else
       i += 1 
