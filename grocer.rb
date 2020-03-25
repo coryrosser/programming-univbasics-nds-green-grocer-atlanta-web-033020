@@ -14,8 +14,12 @@ end
 def consolidate_cart(cart)
   cart_array = []
   i = 0 
-  while i < cart.length do 
-    if cart_array.has_value?(cart)
+  while i < cart.length do
+    cart[i][:count] = 1 
+    cart_array.push[cart[i]]
+    j = 0 
+    while j < cart_array.length do 
+      if cart[i] ==
   
   # Consult README for inputs and outputs
   #
