@@ -39,7 +39,7 @@ def apply_coupons(cart, coupons)
     c_item = "#{coupons[i][:item]} W/ COUPON"
     item_w_coupon = find_item_by_name_in_collection(c_item, cart)
     
-    if item != nil && item[:count] >= coupons[i][:num]
+    if item && item[:count] >= coupons[i][:num]
       if item_w_coupon
         item_w_coupon[:count] += coupons[i][:num]
         item[:count] -= coupons[i][:num]
@@ -60,9 +60,7 @@ def apply_coupons(cart, coupons)
 end
 
 def apply_clearance(cart)
-  # Consult README for inputs and outputs
-  #
-  # REMEMBER: This method **should** update cart
+  price = 0 
 end
 
 def checkout(cart, coupons)
