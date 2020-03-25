@@ -82,11 +82,11 @@ def checkout(cart, coupons)
   while i < sweet_discounts.length do 
     total_price += (sweet_discounts[i][:price] * sweet_discounts[i][:count])
     if total_price > 100 
-      total * 0.9
+      total_price * 0.9
     end
     i += 1 
   end 
-  total
+  total_price
  
  
 end
