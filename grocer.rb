@@ -26,7 +26,8 @@ def consolidate_cart(cart)
       end
     end
     i += 1 
-  
+  end
+  cart_array
   # Consult README for inputs and outputs
   #
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
