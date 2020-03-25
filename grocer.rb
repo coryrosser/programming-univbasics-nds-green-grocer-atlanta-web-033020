@@ -19,7 +19,13 @@ def consolidate_cart(cart)
     cart_array.push[cart[i]]
     j = 0 
     while j < cart_array.length do 
-      if cart[i] ==
+      if cart[i][:item] = cart_array[j][:item]
+        cart[i][:count] += 1
+      else 
+        j += 1 
+      end
+    end
+    i += 1 
   
   # Consult README for inputs and outputs
   #
