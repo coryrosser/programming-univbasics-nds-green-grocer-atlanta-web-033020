@@ -80,7 +80,7 @@ def checkout(cart, coupons)
  i = 0 
  total_price = 0 
   while i < sweet_discounts.length do 
-    total += (sweet_discounts[i][:price]])
+    total += (sweet_discounts[i][:price])
     if total_price > 100 
       total * 0.9
     end
